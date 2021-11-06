@@ -1,7 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
-import { CarrouselImagenes } from './components/CarrouselImagenes/CarrouselImagenes';
+import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
 
 
 function App() {
@@ -11,6 +11,9 @@ function App() {
         <div className="col-md-3 text-left"><h6 className="Fuente-Logo">Entre Verde</h6></div>
          <div className="col-md-9 text-right"><NavBar/></div>
       </div>  
+      <div className="row mx-0 px-0 mt-4 d-inline">
+        <div className="col-md-12 d-inline"><ItemDetailContainer/></div>
+      </div>
       <div className="row mx-0 px-0 mt-4 d-inline">
         <div className="col-md-12 d-inline"><ItemListContainer texto="PRODUCTOS"/></div>
       </div>

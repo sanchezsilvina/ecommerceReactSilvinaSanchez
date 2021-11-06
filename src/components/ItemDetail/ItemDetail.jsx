@@ -1,23 +1,27 @@
-import "./Item.css";
+import "./ItemDetail.css";
 
- const Item=({item})=>
+ const ItemDetail=({item})=>
 {
+
+    console.log (item)
     return (
     <div class="product-card mt-2 mb-2 ml-2 mr-2 d-inline-block">
 		<div class="product-tumb">
-			<img src={item.urlpicture} width='300px' height='300px' alt=""/>
+			<img src={item.urlpicture} width='500px' height='700px' alt=""/>
 		</div>
 		<div class="product-details">
 			<span class="product-catagory">{item.titulo}</span>
 			{/* <h4><a href="">Women leather bag</a></h4> */}
-			{/* <p>{item.descripcion}</p> */}
-            <a href=""> ver detalle</a>
+			<p>{item.descripcion}</p>
 			<div class="product-bottom-details">
 				<div class="product-price" > $ {item.precio} </div>
+			</div>
+            <div class="product-bottom-details">
+				<div class="product-price" > Stock {item.stock} </div>
 			</div>
 		</div>
 	</div>
     )
 }
 
-export default Item
+export default ItemDetail
