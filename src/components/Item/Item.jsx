@@ -9,9 +9,7 @@ import "./Item.css";
 		</div>
 		<div class="product-details">
 			<span class="product-catagory">{item.titulo}</span>
-			{/* <h4><a href="">Women leather bag</a></h4> */}
-			{/* <p>{item.descripcion}</p> */}
-            <a href=""> ver detalle</a>
+            <a href="">ver detalle</a>
 			<div class="product-bottom-details">
 				<div class="product-price" > $ {item.precio} </div>
 			</div>

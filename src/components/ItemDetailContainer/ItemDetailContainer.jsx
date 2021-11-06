@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
 
 
@@ -62,8 +62,12 @@ const getItem = new Promise ((resolve,reject) => {
 export const ItemDetailContainer=()=>
 {
     const [Productos, setProductos] = useState([])
-
-    getItem.then(res =>  setProductos(res))
+  
+    useEffect(()=>{
+        getItem.then(res =>  setProductos(res))
+    },[])
+  
+   
 
     return (
             <div className="container align-center">
